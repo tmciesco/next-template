@@ -1,0 +1,13 @@
+service: next-temp # NOTE: update this with your service name
+
+provider:
+  name: aws
+  runtime: nodejs8.10
+
+functions:
+  hello:
+    handler: lambda.handler
+    events:
+     - http:
+         method: ANY
+         path: /
