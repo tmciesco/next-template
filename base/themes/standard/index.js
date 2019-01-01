@@ -3,7 +3,7 @@ import { semanticColors, typographicColors, buttonColors } from './color/colorVa
 import fonts from './fonts/fonts'
 import fontSizes from './fonts/fontSizes'
 import typography from './fonts/typography'
-import breakpoints from './layout/breakpoints'
+import mediaQueries from './layout/breakpoints'
 import spacingSizes from './layout/spacingSizes'
 import contentContainer from './layout/contentContainer'
 
@@ -15,7 +15,7 @@ const standard = {
     fonts,
     fontSizes,
     typography,
-    breakpoints,
+    mediaQueries,
     spacingSizes,
     contentContainer
 }

@@ -24,14 +24,5 @@ export const StyledParagraph = styled.p`
   ${p => paragraphSizes[p.size]};
   ${p => p.noMargin && 'margin: 0'};
   ${p => p.noMaxWidth && 'max-width: none'};
-  padding: ${p => spacingSizes[p.pad]} ;
-  padding-top: ${p => spacingSizes[p.pt]};
-  padding-right: ${p => spacingSizes[p.pr]};
-  padding-bottom: ${p => spacingSizes[p.pb]};
-  padding-left: ${p => spacingSizes[p.pl]};
-  margin: ${p => spacingSizes[p.mar]};
-  margin-top: ${p => spacingSizes[p.mt]};
-  margin-right: ${p => spacingSizes[p.mr]};
-  margin-bottom: ${p => spacingSizes[p.mb]};
-  margin-left: ${p => spacingSizes[p.ml]};
+  ${spacingSizes};
 `;

@@ -21,6 +21,8 @@ export const navColors = {
 
 export const navHoverColors = navColors
 
+export const navBgColors = navColors
+
 export const NavbarStyles = styled.header`
   color: ${p => navColors[p.color]};
   ${p => navSizes[p.size]};
@@ -28,16 +30,8 @@ export const NavbarStyles = styled.header`
   flex-direction: row;
   justify-content: space-around;
   border-bottom: 1px solid black;
-  padding: ${p => spacingSizes[p.pad]} ;
-  padding-top: ${p => spacingSizes[p.pt]};
-  padding-right: ${p => spacingSizes[p.pr]};
-  padding-bottom: ${p => spacingSizes[p.pb]};
-  padding-left: ${p => spacingSizes[p.pl]};
-  margin: ${p => spacingSizes[p.mar]};
-  margin-top: ${p => spacingSizes[p.mt]};
-  margin-right: ${p => spacingSizes[p.mr]};
-  margin-bottom: ${p => spacingSizes[p.mb]};
-  margin-left: ${p => spacingSizes[p.ml]};
+  background: ${p => navBgColors[p.bg]};
+  ${spacingSizes};
 `;
 
 export const NavbarItemStyles = styled.li`
@@ -46,16 +40,7 @@ export const NavbarItemStyles = styled.li`
   color: ${p => navColors[p.color]};
   ${p => navSizes[p.size]};
   position: relative;
-  padding: ${p => spacingSizes[p.pad]} ;
-  padding-top: ${p => spacingSizes[p.pt]};
-  padding-right: ${p => spacingSizes[p.pr]};
-  padding-bottom: ${p => spacingSizes[p.pb]};
-  padding-left: ${p => spacingSizes[p.pl]};
-  margin: ${p => spacingSizes[p.mar]};
-  margin-top: ${p => spacingSizes[p.mt]};
-  margin-right: ${p => spacingSizes[p.mr]};
-  margin-bottom: ${p => spacingSizes[p.mb]};
-  margin-left: ${p => spacingSizes[p.ml]};
+  ${spacingSizes};
 
   &:hover {
     color: ${p => navHoverColors[p.hover]};
@@ -69,16 +54,7 @@ export const NavbarListStyles = styled.ul`
   justify-content: space-between;
   color: ${p => navColors[p.color]};
   ${p => navSizes[p.size]};
-  padding: ${p => spacingSizes[p.pad]} ;
-  padding-top: ${p => spacingSizes[p.pt]};
-  padding-right: ${p => spacingSizes[p.pr]};
-  padding-bottom: ${p => spacingSizes[p.pb]};
-  padding-left: ${p => spacingSizes[p.pl]};
-  margin: ${p => spacingSizes[p.mar]};
-  margin-top: ${p => spacingSizes[p.mt]};
-  margin-right: ${p => spacingSizes[p.mr]};
-  margin-bottom: ${p => spacingSizes[p.mb]};
-  margin-left: ${p => spacingSizes[p.ml]};
+  ${spacingSizes};
 
   ${props =>
     props.subList === true &&

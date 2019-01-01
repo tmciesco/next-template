@@ -27,13 +27,13 @@ Navbar.defaultProps = {
 
 NavbarItem.defaultProps = {
   color: "dark",
-  size: "medium",
+  size: "large",
   hover: "accent"
 };
 
 Dropdown.defaultProps = {
 	color: 'dark',
-	size: 'medium',
+	size: 'large',
 	hover: "accent"
   };
 

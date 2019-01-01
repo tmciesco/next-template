@@ -27,7 +27,7 @@ export const Paragraph = ({ children, color, noMargin, size, pad, pt, pr, pb, pl
 
 export const ParagraphSizes = Object.keys(paragraphSizes);
 export const ParagraphColors = Object.keys(paragraphColors);
-export const SpacingSizes = Object.keys(theme.spacingSizes);
+// export const SpacingSizes = Object.keys(theme.spacingSizes);
 
 Paragraph.propTypes = {
   /** @ignore */
@@ -40,16 +40,16 @@ Paragraph.propTypes = {
   noMaxWidth: PropTypes.bool,
   /** Size of the Paragraph. Options are 'small', 'medium', 'large' */
   size: PropTypes.oneOf(ParagraphSizes),
-  pad: PropTypes.oneOf(SpacingSizes),
-  pt: PropTypes.oneOf(SpacingSizes),
-  pr: PropTypes.oneOf(SpacingSizes),
-  pb: PropTypes.oneOf(SpacingSizes),
-  pl: PropTypes.oneOf(SpacingSizes),
-  mar: PropTypes.oneOf(SpacingSizes),
-  mt: PropTypes.oneOf(SpacingSizes),
-  mr: PropTypes.oneOf(SpacingSizes),
-  mb: PropTypes.oneOf(SpacingSizes),
-  ml: PropTypes.oneOf(SpacingSizes),
+  // pad: PropTypes.oneOf(SpacingSizes),
+  // pt: PropTypes.oneOf(SpacingSizes),
+  // pr: PropTypes.oneOf(SpacingSizes),
+  // pb: PropTypes.oneOf(SpacingSizes),
+  // pl: PropTypes.oneOf(SpacingSizes),
+  // mar: PropTypes.oneOf(SpacingSizes),
+  // mt: PropTypes.oneOf(SpacingSizes),
+  // mr: PropTypes.oneOf(SpacingSizes),
+  // mb: PropTypes.oneOf(SpacingSizes),
+  // ml: PropTypes.oneOf(SpacingSizes),
 };
 
 Paragraph.defaultProps = {
