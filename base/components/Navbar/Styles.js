@@ -14,7 +14,7 @@ export const navColors = {
   light: typographicColors.typeLight,
   medium: typographicColors.typeMedium,
   dark: typographicColors.typeDark,
-  accent: typographicColors.typeAccent,
+  accent: typographicColors.typeSecondary,
   success: semanticColors.colorSuccess,
   danger: semanticColors.colorDanger,
 };
@@ -29,7 +29,6 @@ export const NavbarStyles = styled.header`
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  border-bottom: 1px solid black;
   background: ${p => navBgColors[p.bg]};
   ${spacingSizes};
 `;
@@ -45,6 +44,10 @@ export const NavbarItemStyles = styled.li`
   &:hover {
     color: ${p => navHoverColors[p.hover]};
   }
+`;
+
+export const NavbarLogoStyles = styled.div`
+  flex-basis: 10%;
 `;
 
 export const NavbarListStyles = styled.ul`

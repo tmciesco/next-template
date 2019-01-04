@@ -32,6 +32,9 @@ export const FooterStyles = styled.footer`
     background: ${p => footerBgColors[p.bg]};
     ${spacingSizes};
 `
+export const FooterLogoStyles = styled.div`
+  flex-basis: 10%;
+`;
 
 export const FooterListStyles = styled.ul`
     list-style: none;

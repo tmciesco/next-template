@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 import theme from '../../Theme'
 
@@ -27,6 +27,9 @@ const HeadingBase = styled.span`
   color: ${p => headingColors[p.color]};
   ${p => headingSizes[p.size]};
   ${spacingSizes};
+  ${props => props.center && css`
+    text-align: center;
+`}
 `;
 
 export const headingElements = {

@@ -1,11 +1,11 @@
-import { FooterStyles, FooterListStyles, FooterItemStyles } from "./Styles"
+import { FooterStyles, FooterListStyles, FooterItemStyles, FooterLogoStyles } from "./Styles"
 
 export const Footer = ({ children, ...others }) => {
     return <FooterStyles {...others}>{children}</FooterStyles>;
   };
   
   export const FooterLogo = ({ children, ...others }) => {
-    return <div {...others}>{children}</div>;
+    return <FooterLogoStyles {...others}>{children}</FooterLogoStyles>;
   };
   
   export const FooterList = ({ children, ...others }) => {
@@ -23,7 +23,7 @@ export const Footer = ({ children, ...others }) => {
   
   FooterItem.defaultProps = {
     color: "dark",
-    size: "medium",
+    size: "large",
     hover: "accent"
   };
   

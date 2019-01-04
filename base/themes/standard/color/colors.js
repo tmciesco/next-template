@@ -27,7 +27,7 @@ const colors = {
     redDark: '#EE3635',
     redDark1: '#E42B2A',
   
-    blue: '#519CB0',
+    blue: '#004C7E',
     blueLight: '#DDF9FF',
     blueLight1: '#B0E0EC',
     blueLight2: '#99D3E1',
@@ -42,10 +42,13 @@ const colors = {
     greenLight3: '#79D7C0',
     greenDark: '#41B99C',
     greenDark1: '#26A486',
+
+    primary: '#004C7E',
+    secondary: '#0084bf',
   };
 
 const brandColors = {
-    primary: '#5CCCB1',
+    primary: '#004C7E',
     primaryLight: '#C9F6EB',
     primaryLight1: '#ADE7D9',
     primaryLight2: '#98DFCE',

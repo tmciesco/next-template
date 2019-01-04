@@ -4,7 +4,7 @@ const Meta = () => (
 	<Head>
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<meta charSet="utf-8" />
-		<title>Next Template and Style System</title>
+		<title>Sinoc | Blockchain R&amp;D</title>
 	</Head>
 )
 

@@ -1,7 +1,8 @@
 import styled from 'styled-components';
 
-import typography from '../../../base/typography/typography';
-import { semanticColors, typographicColors } from '../../../base/color/colorVariables';
+import theme from '../../Theme'
+
+const { typography, typographicColors, semanticColors, spacingSizes } = theme
 
 export const listSizes = {
     small: typography.finePrint,
@@ -21,13 +22,15 @@ export const listSizes = {
   export const StyledListItem= styled.li`
   color: ${p => listColors[p.color]};
   ${p => listSizes[p.size]};
-  ${p => p.noMargin && 'margin: 0'};
+  ${spacingSizes}
+
 `;
   
   const ListBase = styled.span`
     margin: 0;
     color: ${p => listColors[p.color]};
     ${p => listSizes[p.size]};
+    ${spacingSizes}
   `;
   
   export const listElements = {
