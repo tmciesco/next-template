@@ -17,11 +17,12 @@ body {
     box-sizing: border-box;
 	font-family: 'Lato', Helvetica, sans-serif;
 	line-height: 1.6;
+    min-height: 100vh;
 }
 
 a {
     text-decoration: none;
-	color: none;
+	color: inherit;
 }
 `
 

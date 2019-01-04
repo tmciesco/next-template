@@ -25,4 +25,7 @@ export const StyledParagraph = styled.p`
   ${p => p.noMargin && 'margin: 0'};
   ${p => p.noMaxWidth && 'max-width: none'};
   ${spacingSizes};
+  ${props => props.center && css`
+    text-align: center;
+`}
 `;

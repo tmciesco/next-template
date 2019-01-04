@@ -1,11 +1,11 @@
-import { NavbarStyles, NavbarListStyles, NavbarItemStyles } from "./Styles";
+import { NavbarStyles, NavbarListStyles, NavbarItemStyles, NavbarLogoStyles } from "./Styles";
 
 export const Navbar = ({ children, ...others }) => {
   return <NavbarStyles {...others}>{children}</NavbarStyles>;
 };
 
 export const NavbarLogo = ({ children, ...others }) => {
-  return <div {...others}>{children}</div>;
+  return <NavbarLogoStyles {...others}>{children}</NavbarLogoStyles>;
 };
 
 export const NavbarList = ({ children, ...others }) => {

@@ -12,6 +12,7 @@ export const buttonModes = {
 
     &:hover {
       background-color: ${buttonColors.buttonPrimaryBackgroundHover};
+      border: 1px solid ${buttonColors.buttonPrimaryBackgroundHover};
     }
   `,
   secondary: css`
@@ -61,7 +62,7 @@ export const buttonSizes = {
 export const StyledButton = styled.button`
   ${p => buttonModes[p.mode]};
   ${p => buttonSizes[p.size]};
-  border-radius: 3px;
   cursor: pointer;
   outline: none;
+  text-transform: uppercase;
 `;

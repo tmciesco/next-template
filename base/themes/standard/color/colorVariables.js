@@ -12,13 +12,15 @@ export const typographicColors = {
   typeAccent: colors.blue,
   typeDanger: colors.red,
   typeSuccess: colors.green,
+  typePrimary: colors.primary,
+  typeSecondary: colors.secondary
 };
 
 export const buttonColors = {
   // Primary
-  buttonPrimaryBackground: colors.blue,
-  buttonPrimaryBackgroundHover: colors.blueDark1,
-  buttonPrimaryBorder: colors.blue,
+  buttonPrimaryBackground: colors.primary,
+  buttonPrimaryBackgroundHover: colors.secondary,
+  buttonPrimaryBorder: colors.primary,
   buttonPrimaryText: colors.white,
 
   // Secondary
